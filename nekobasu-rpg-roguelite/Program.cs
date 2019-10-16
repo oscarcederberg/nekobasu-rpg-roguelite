@@ -7,9 +7,10 @@ namespace nekobasu_rpg_roguelite
 {
     class Program
     {
-        static List<Classes.Type> types = new List<Classes.Type>();
+        public static Dictionary<string,Classes.Type> types = new Dictionary<string, Classes.Type>();
         static void Main(string[] args)
         {
+
             Run();
             Console.ReadLine();
         }
@@ -17,8 +18,7 @@ namespace nekobasu_rpg_roguelite
         static void Run()
         {
             Load();
-
-            foreach(Classes.Type type in types)
+            foreach(Classes.Type type in types.Values)
             {
                 Console.WriteLine(type);
             }
@@ -31,7 +31,7 @@ namespace nekobasu_rpg_roguelite
 
         static void LoadTypes()
         {
-            types = JsonConvert.DeserializeObject<List<Classes.Type>>(File.ReadAllText(@"Data\types.json"));
+            types = JsonConvert.DeserializeObject<Dictionary<string, Classes.Type>>(File.ReadAllText(@"Data\types.json"));
         }
     }
 }

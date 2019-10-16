@@ -19,9 +19,10 @@ namespace nekobasu_rpg_roguelite.Classes
         public Attribute Agility;
         public Attribute Luck;
 
-        public Entity()
+        public Entity(string id, string name)
         {
-
+            this.Id = id;
+            this.Name = name;
         }
     }
 }
