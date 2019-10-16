@@ -20,6 +20,10 @@ namespace nekobasu_rpg_roguelite.Classes
             {
                 this.Type = type;
             }
+            else
+            {
+                throw new ArgumentException($"Id doesn't exist", typeid);
+            }
             this.Strength = new Attribute(strength);
         }
     }
