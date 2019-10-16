@@ -1,0 +1,124 @@
+[
+  {
+    "id": "main:type_hearts",
+    "name": "Hearts",
+    "matchups": {
+      "main:type_spades": 1.5,
+      "main:type_clubs": 0.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 0.5
+    }
+  },
+  {
+    "id": "main:type_spades",
+    "name": "Spades",
+    "matchups": {
+      "main:type_diamonds": 1.5,
+      "main:type_hearts": 0.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 0.5
+    }
+  },
+  {
+    "id": "main:type_diamonds",
+    "name": "Diamonds",
+    "matchups": {
+      "main:type_clubs": 1.5,
+      "main:type_spades": 0.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 0.5
+    }
+  },
+  {
+    "id": "main:type_clubs",
+    "name": "Clubs",
+    "matchups": {
+      "main:type_hearts": 1.5,
+      "main:type_diamonds": 0.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 0.5
+    }
+  },
+  {
+    "id": "main:type_suns",
+    "name": "Suns",
+    "matchups": {
+      "main:type_moons": 1.5,
+      "main:type_tears": 0.5,
+      "main:type_redjokers": 0.5,
+      "main:type_bluejokers": 1.5
+    }
+  },
+  {
+    "id": "main:type_moons",
+    "name": "Moons",
+    "matchups": {
+      "main:type_stars": 1.5,
+      "main:type_suns": 0.5,
+      "main:type_redjokers": 0.5,
+      "main:type_bluejokers": 1.5
+    }
+  },
+  {
+    "id": "main:type_stars",
+    "name": "Stars",
+    "matchups": {
+      "main:type_tears": 1.5,
+      "main:type_moons": 0.5,
+      "main:type_redjokers": 0.5,
+      "main:type_bluejokers": 1.5
+    }
+  },
+  {
+    "id": "main:type_tears",
+    "name": "Tears",
+    "matchups": {
+      "main:type_suns": 1.5,
+      "main:type_stars": 0.5,
+      "main:type_redjokers": 0.5,
+      "main:type_bluejokers": 1.5
+    }
+  },
+  {
+    "id": "main:type_redjokers",
+    "name": "Red Jokers",
+    "matchups": {
+      "main:type_hearts": 0.5,
+      "main:type_spades": 0.5,
+      "main:type_diamonds": 0.5,
+      "main:type_clubs": 0.5,
+      "main:type_suns": 1.5,
+      "main:type_moons": 1.5,
+      "main:type_stars": 1.5,
+      "main:type_tears": 1.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 1.5,
+      "main:type_none": 1.5
+    }
+  },
+  {
+    "id": "main:type_bluejokers",
+    "name": "Blue Jokers",
+    "matchups": {
+      "main:type_hearts": 1.5,
+      "main:type_spades": 1.5,
+      "main:type_diamonds": 1.5,
+      "main:type_clubs": 1.5,
+      "main:type_suns": 0.5,
+      "main:type_moons": 0.5,
+      "main:type_stars": 0.5,
+      "main:type_tears": 0.5,
+      "main:type_redjokers": 1.5,
+      "main:type_bluejokers": 1.5,
+      "main:type_none": 1.5
+    }
+  },
+  {
+    "id": "main:type_none",
+    "name": "None",
+    "matchups": {
+      "main:type_redjokers": 0.0,
+      "main:type_bluejokers": 0.0
+    }
+  }
+]
