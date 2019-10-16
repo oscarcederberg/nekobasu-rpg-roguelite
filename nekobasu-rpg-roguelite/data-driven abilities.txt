@@ -1,0 +1,26 @@
+CHOOSING TARGETS
+n = {1,2,3,4}, if more than entities in group, stop.
+group = {ally, enemy, any, other}
+tag = list of tags
+
+target n group
+target random n group
+target all group
+target tag{} group
+target id group
+
+DO SOMETHING WITH TARGETS
+expr = an expression for calculating amount
+
+damage expr chance
+heal expr chance
+steal expr chance
+give expr chance
+kill chance
+revive chance
+status effects{} chance
+
+DO SOMETHING WITHOUT TARGETS
+entity = an id
+
+spawn entity
