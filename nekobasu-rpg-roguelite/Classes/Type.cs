@@ -17,6 +17,24 @@ namespace nekobasu_rpg_roguelite.Classes
             this.Matchups = matchups;
         }
 
+        public override bool Equals(object obj)
+        {
+            if(obj == null | !(obj.GetType() == typeof(Type)))
+            {
+                return false;
+            }
+            else
+            {
+                Type t = (Type)obj;
+                return this.Id.Equals(t.Id);
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return this.Id.GetHashCode();
+        }
+
         public override string ToString()
         {
             return this.Name;

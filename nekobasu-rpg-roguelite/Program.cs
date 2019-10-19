@@ -10,7 +10,8 @@ namespace nekobasu_rpg_roguelite
         public static Dictionary<string,Classes.Type> types = new Dictionary<string, Classes.Type>();
         static void Main(string[] args)
         {
-
+            Func<Attribute, Type, string> func = (a, t) => $"{a.ToString()} of {t}";
+            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(func));
             Run();
             Console.ReadLine();
         }
